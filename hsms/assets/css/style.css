@@ -1,0 +1,130 @@
+/* assets/css/style.css */
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f8;
+    color: #222;
+}
+
+.site-header {
+    background: #1f6f54;
+    color: white;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.site-header .logo { font-size: 22px; font-weight: bold; }
+
+.site-header nav a {
+    color: white;
+    margin-left: 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.site-header nav a:hover { text-decoration: underline; }
+
+.form-container, .page-container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: white;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.page-container { max-width: 1100px; }
+
+h2 { margin-top: 0; color: #1f6f54; }
+
+label { display: block; margin: 14px 0 6px; font-weight: 600; }
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.btn-large, .btn-small {
+    background: #1f6f54;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-large {
+    padding: 14px 24px;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.btn-small { padding: 8px 14px; font-size: 14px; }
+
+.btn-large:hover, .btn-small:hover { background: #155a43; }
+
+.checkbox-label { display: flex; align-items: center; gap: 8px; font-weight: normal; }
+.checkbox-label input { width: auto; }
+
+.alert {
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+.alert-error { background: #fde2e2; color: #9b1c1c; }
+.alert-success { background: #e1f5ea; color: #146c43; }
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+.data-table th, .data-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+.data-table th { background: #f0f4f2; }
+
+.row-emergency { background: #fff5f5; }
+
+.status-badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.status-pending { background: #fef3c7; color: #92400e; }
+.status-assigned { background: #dbeafe; color: #1e40af; }
+.status-in-progress { background: #e0e7ff; color: #3730a3; }
+.status-completed { background: #d1fae5; color: #065f46; }
+.status-cancelled { background: #fee2e2; color: #991b1b; }
+
+.job-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.job-photo { max-width: 200px; border-radius: 6px; margin: 10px 0; }
+
+.inline-form { display: flex; gap: 8px; align-items: center; }
+.inline-form select { width: auto; }
+
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 14px;
+}
